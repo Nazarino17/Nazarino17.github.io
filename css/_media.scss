@@ -1,0 +1,337 @@
+@media (max-width: 1200px){
+    .header{
+        &__item:nth-child(-1n+5){
+            padding-right: 20px;
+        }
+        &__link{
+            font-size: 13px;
+        }
+    }
+    .promo{
+        &__title{
+            font-size: 50px;
+        }
+    }
+    .cause{
+        &__tex{
+            width: 300px;
+        }
+    }
+    .footer{
+        &__content{
+            flex-wrap: wrap;
+        }
+        &__item{
+            div{
+                margin-bottom: 20px;
+            }
+        }
+        .item1{
+            flex-basis: 100%;
+            order: 1;
+            justify-content: center;
+        }
+        .item2{
+            flex-basis: 100%;
+            margin: 0;
+        }
+        .item3{
+            flex-basis: 100%;
+            justify-content: center;
+            align-items:center;
+        }
+    }
+}
+@media (max-width: 992px){
+    .header{
+        &__item:nth-child(-1n+5){
+            padding-right: 10px;
+        }
+        &__link{
+            font-size: 11px;
+        }
+    }
+    .subheader{
+        img{
+            width: 100%;
+        }
+        &__text{
+            font-size: 11px;
+        }
+        &__btn{
+            a{
+                font-size: 12px;
+                line-height: 39px;
+                width: 118px;
+                height: 39px;
+            }
+        }
+    }
+    .promo{
+        padding-bottom: 0;
+        &__title{
+            font-size: 38px;
+        }
+        &__subtitle{
+            font-size: 28px;
+        }
+    }
+    .cause{
+        h2{
+            font-size: 28px;
+        }
+        &__item{
+            flex-direction: column;
+        }
+        &__img{
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .header{
+        height: 30px;
+        &__menu{
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            z-index: 1;
+            transition: all .5s ease;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0,0,0, .8);
+            
+        }
+        &__hamb{
+            position: absolute;
+            display: block;
+            right: 10px;
+            top: 16px;
+            z-index: 1;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            span{
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 2px;
+                transition: .5s all;
+            }              
+        }
+        &__active{
+            left: 0;
+            span{
+                margin-bottom: -2px;
+                right: 0;
+                &:nth-child(1){
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }  
+        &__item{
+            padding-right: 0;
+            margin: 10px 0;
+            border-right: none;
+        }
+        &__item:nth-child(-1n+5){
+            border: none;
+        }
+        &__link{
+            font-size: 20px;
+        }
+    }
+    .promo{
+        &__title{
+            line-height: 45px;
+        }
+    }
+
+    .subheader{
+        &__btn{
+            margin-top: 0;
+        }
+        .xs-hidden{
+            display: none;
+        }
+        .xs-visible{
+            display: block;
+            text-align: center;
+        }
+        .link{
+            font-size: 11px;
+            line-height: 30px;
+            width: 119px;
+            height: 32px;
+        }
+        &__phone{
+            display: block;
+            margin-top: 8px;
+            color: $color-1;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 24px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: right;
+        }
+    }
+
+    .cause{
+        h2{
+            font-size: 23px;
+        }
+        &__rows{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .header{
+        &__link{
+            font-size: 11px;
+        }
+    }
+    .subheader{
+        .off{
+            display: none;
+        }
+        &__link{
+            margin-top: 36px;
+        }
+        .link{
+            font-size: 10px;
+            line-height: 28px;
+            width: 96px;
+            height: 28px;
+        }
+        &__btn{
+            a{
+                font-size: 12px;
+                line-height: 47px;
+                width: 99px;
+            }
+        }
+    }
+    .promo{
+        min-height: 400px;
+        &__text{
+            display: none;
+        }
+        &__title{
+            font-size: 35px;
+        }
+        &__subtitle{
+            font-size: 19px;
+            line-height: 26px;
+        }
+    }
+    .cause{
+        &__tex{
+            text-align: center;
+        }
+    }
+    .mobile{
+        margin: -56px 0px;
+        &__title{
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 14px;
+            padding:  0 30px;
+        }
+        &__item{
+            padding-top: 110px;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+    .car{
+        background: none;
+        padding: 0 0 35px 0;
+        &__img{
+            background-color: #000000;
+        }
+        &__title{
+            display: none;
+        }
+        &__subtitle{
+            display: none;
+        }
+        &__subcar{
+            text-align: center;
+            font-size: 17px;
+            color: $color-1;
+            padding: 0 27px;
+        }
+    }
+    .require{
+        padding: 75px 0 60px 0;
+        &__title{
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 16px;
+        }
+        &__list{
+            li{
+                font-size: 15px;
+            }
+        }
+        span{
+            font-size: 17px;
+        }
+    }
+    .world{
+        &__promo{
+            height: 360px;
+        }
+        &__title{
+            font-size: 16px;
+        }
+        &__subtitle{
+            font-size: 14px;
+        }
+        &__btn{
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+    .footer{
+        &__menuUp{
+            li{
+                margin: 25px 7px 0;
+                a{
+                    font-size: 12px;
+                }
+            }
+            &:after{
+                left: 4%;
+                width: 250px;
+            }
+        }
+        &__menuBt {
+            li{
+                margin: 0 2px;
+                a{
+                    font-size: 9px;
+                }
+            }
+        }
+    }
+}
